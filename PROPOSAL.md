@@ -16,8 +16,8 @@ Terms: the SAMHSA data page states no license or redistribution terms. Until I c
 
 ## Decision affected by the model
 
-Who acts: FirstHarbor, a between-sessions support app in which therapy clients talk to an AI companion, Anchor, and their counselor watches a dashboard. At intake, FirstHarbor assigns each new client a starting level of monitoring: standard, or close (the counselor reviews the first week of conversations and risk alerts fire at a lower level).
+Who acts: I do, as the founder building FirstHarbor, a between-sessions support app in which therapy clients talk to an AI companion, Anchor, and their counselor watches a dashboard. FirstHarbor has no clients yet. Before it does, I am deciding whether to build intake risk screening, and where to set its default threshold. With screening, a new client whose predicted risk is above the threshold starts on close monitoring: the counselor reviews the first week of conversations, and risk alerts fire at a lower level. Without it, every new client starts the same.
 
-What changes: today every new client starts the same. With the model, clients whose predicted risk is above a threshold start on close monitoring.
+What changes: I build the screening only if, on held-out data, it lowers the expected cost below treating every client the same, across the values of r that counselors find plausible. The threshold I ship is the one that minimizes that cost at the value of r I can best defend.
 
 Which mistake costs more: starting an at-risk client on standard monitoring costs far more than starting a low-risk client on close monitoring, which costs a week of counselor review time. Loss per 100 new clients: L = r · FN + FP, where FN counts at-risk clients put on standard monitoring, FP counts low-risk clients put on close monitoring, and r is the cost of a miss in units of one unneeded week of close monitoring. The best threshold depends on r, so I will report the decision across a range of r and say which value I believe and why.
