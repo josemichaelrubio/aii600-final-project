@@ -22,3 +22,10 @@ This file is the history of the project. Append an entry when a choice changes t
 - Why. The proposal as first pushed described FirstHarbor assigning clients to monitoring levels, which does not happen yet. Whether to build the feature is the decision I am actually making now.
 - Alternative. A generic counselor at any practice deciding whom to check in with more often in the first weeks. It does not depend on FirstHarbor, but the person who acts would be hypothetical.
 - Revisit. If FirstHarbor signs pilot counselors before December, they become the decision makers, and their own estimates of r replace mine.
+
+## 2026-10-26: a range for the cost ratio r, from published costs
+
+- Decision. Report the decision across r from 10 to 300, where r is the cost of a missed at-risk client in units of one unneeded week of close monitoring. Sources and arithmetic are in `REFERENCES.md`.
+- Why. r = (events prevented per client monitored × cost per event) / (cost of one week of close monitoring). Follow-up care prevented about 2.3 suicidal-behavior events per 100 people (Stanley et al. 2018). A nonfatal attempt costs about $13,300, and an event averages about $137,000 once deaths are counted (Shepard et al. 2016, 2013 dollars, scaled by about 1.34 to 2024). A week of close monitoring costs $14 to $28 (BLS counselor wage × an assumed 30 to 60 minutes). That gives r of about 14 to 28 counting attempts only, and about 150 to 300 counting deaths.
+- Alternative. A single value of r, which hides how much the threshold depends on it. Asking counselors how many low-risk clients they would watch to catch one at-risk client measures r more directly, and is still planned.
+- Revisit. If counselors' answers fall outside 10 to 300, or the model beats the baseline only over part of the range, the talk says which r the decision depends on.
