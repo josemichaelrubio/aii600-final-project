@@ -47,13 +47,22 @@ r is the cost of a missed at-risk client in units of one unneeded week of close 
 - Limits: almost all of the cost is lost earnings. The authors say emotional costs are not estimated.
 - Checked: read directly, full text, 2026-10-26.
 
-**Stanley, B., et al. (2018). Comparison of the Safety Planning Intervention with follow-up vs usual care of suicidal patients treated in the emergency department. *JAMA Psychiatry*.** Summary used: https://www.npr.org/sections/health-shots/2018/07/11/628029412/a-simple-emergency-room-intervention-can-help-cut-future-suicide-risk
+**Stanley, B., Brown, G. K., Brenner, L. A., et al. (2018). Comparison of the Safety Planning Intervention with follow-up vs usual care of suicidal patients treated in the emergency department. *JAMA Psychiatry*, 75(9), 894–900. doi:10.1001/jamapsychiatry.2018.1776** https://pmc.ncbi.nlm.nih.gov/articles/PMC6142908
 
-- Pulled: suicidal behavior over six months was 3.03% with safety planning plus follow-up calls, against 5.29% with usual care (odds ratio 0.56).
-- Derived: about 2.3 events prevented per 100 people followed.
+- Pulled:
+  - Suicidal behavior over six months, 36 of 1,186 (3.03%) with safety planning plus follow-up calls (SPI+), against 24 of 454 (5.29%) with usual care. Odds ratio 0.56, 95% CI 0.33 to 0.95. Number needed to treat 44.43.
+  - "Suicidal behavior" comes from VA Suicide Behavior Reports: suicide attempts, suicide deaths, and other suicidal behaviors, including interrupted attempts.
+  - The number of follow-up calls was not associated with suicidal behavior (P = .13). The authors suggest the safety plan may matter more than the calls.
+- Derived:
+  - About 2.3 events prevented per 100 people (1 / 44.43).
+  - Across the odds ratio's 95% CI, 0.25 to 3.5 per 100.
 - Why: how much close monitoring helps, the term that turns cost per event into the cost of a miss.
-- Limits: a cohort comparison, not a randomized trial. Veterans seen in the emergency department, a higher-risk group than adults in outpatient treatment. Weekly calls are not FirstHarbor's close monitoring. Treat 2.3 per 100 as an upper bound.
-- Checked: secondary (news and trade-press summaries). Check against the paper before the final talk.
+- Limits:
+  - A cohort comparison at matched sites, not a randomized trial.
+  - Mostly male veterans seen in the emergency department for a suicidal crisis and not admitted, a higher-risk group than adults in outpatient treatment.
+  - The intervention was a safety plan plus calls. FirstHarbor's close monitoring is neither, and the call count did not predict the outcome, so the paper supports the plan more than the monitoring.
+  - Events mix deaths with interrupted attempts, so the average cost per event is likely below the deaths-included figure from Shepard.
+- Checked: read directly, full text, 2026-10-26.
 
 **Nock, M. K., et al. (2008). Cross-national prevalence and risk factors for suicidal ideation, plans and attempts. *British Journal of Psychiatry*.** https://pubmed.ncbi.nlm.nih.gov/18245022/
 

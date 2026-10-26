@@ -29,3 +29,10 @@ This file is the history of the project. Append an entry when a choice changes t
 - Why. r = (events prevented per client monitored × cost per event) / (cost of one week of close monitoring). Follow-up care prevented about 2.3 suicidal-behavior events per 100 people (Stanley et al. 2018). A nonfatal attempt costs about $13,300, and an event averages about $137,000 once deaths are counted (Shepard et al. 2016, 2013 dollars, scaled by about 1.34 to 2024). A week of close monitoring costs $14 to $28 (BLS counselor wage × an assumed 30 to 60 minutes). That gives r of about 14 to 28 counting attempts only, and about 150 to 300 counting deaths.
 - Alternative. A single value of r, which hides how much the threshold depends on it. Asking counselors how many low-risk clients they would watch to catch one at-risk client measures r more directly, and is still planned.
 - Revisit. If counselors' answers fall outside 10 to 300, or the model beats the baseline only over part of the range, the talk says which r the decision depends on.
+
+## 2026-10-26: widen the range for r after reading Stanley et al. 2018
+
+- Decision. Report the decision across r from 2 to 500, replacing 10 to 300.
+- Why. The full paper gives an odds ratio of 0.56 with a 95% CI of 0.33 to 0.95, so the events prevented per 100 people range from 0.25 to 3.5, not just 2.3. Recomputed r: attempts only, 2 to 3 at the weak end of the CI, 14 to 29 at the estimate, and 22 to 44 at the strong end. Deaths included, 16 to 33, 148 to 296, and 228 to 456. The paper also found that the number of follow-up calls did not predict the outcome, so the effect may belong to the safety plan more than to monitoring. That pushes r toward the low end.
+- Alternative. Keep 10 to 300, which drops the low end that the paper's own confidence interval allows.
+- Revisit. If counselors' estimates cluster in a narrow band, report that band as the main result and the wide range as the sensitivity check.
