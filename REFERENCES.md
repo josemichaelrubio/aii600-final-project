@@ -7,8 +7,17 @@ Each source lists what was taken from it, why, and how it was checked. "Read dir
 **SAMHSA. National Survey on Drug Use and Health (NSDUH), public-use files.** https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles/2023
 
 - Pulled: the files come in SAS, SPSS, Stata, R, ASCII, and tab-delimited formats. Data from 2021 on cannot be compared or pooled with earlier years, because web interviews were added. The public files leave out most geographic variables. The page states no license or redistribution terms.
-- Why: it is the project's data source. The comparability break sets the years used (2021 on).
+- Why: it is the project's data source. The comparability break sets the years used (2021 on). A later break in the treatment questions narrows that to 2022 on (next entry).
 - Checked: read directly, 2026-10-26.
+
+**Center for Behavioral Health Statistics and Quality, SAMHSA. (2025). *2024 National Survey on Drug Use and Health (NSDUH): Methodological summary and definitions*, §3.4.10 Mental Health Treatment, pp. 90–91, and footnote 9 (p. 13).** https://www.samhsa.gov/data/sites/default/files/reports/rpt56485/2024-nsduh-method-summary-defs.pdf
+
+- Pulled:
+  - The mental-health treatment questions were heavily revised for 2022. Estimates from 2022 "should not be compared with estimates from 2021."
+  - Starting in June 2024, every inpatient and outpatient location got the added text "for mental health, emotions, or behavior," and the grid headings became "LOCATION." Treatment estimates overall and for inpatient or outpatient locations from 2024 "are not comparable with those from 2022 and 2023." Prescription medication, telehealth, and jail or prison treatment remain comparable.
+  - Footnote 9: the changes "were presented to respondents starting in June 2024," so 2024 mixes the two wordings.
+- Why: sets the split. Train on 2022, test on 2023, check on 2024 (`decisions.md`, 2026-11-06).
+- Checked: read directly (PDF text, including the recommended citation on the title page), 2026-11-06.
 
 **Gaur, M., et al. (2021). Characterization of time-variant and time-invariant assessment of suicidality on Reddit using C-SSRS. *PLOS ONE*. Dataset: Zenodo record 4543776.** https://zenodo.org/records/4543776
 
