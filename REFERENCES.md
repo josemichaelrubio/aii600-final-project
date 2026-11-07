@@ -86,7 +86,36 @@ r is the cost of a missed at-risk client in units of one unneeded week of close 
 - Why: the cost of a false alarm, the denominator of r.
 - Checked: secondary (search summary of the BLS page).
 
+## Counselor capacity
+
+**American Psychological Association. (2025). *AI in the therapist's office: 2025 Practitioner Pulse Survey*. December 2025.** https://www.apa.org/pubs/reports/practitioner/2025/full-report.pdf
+
+- Pulled:
+  - 46% of psychologists had no openings for new patients, and 40% had a waitlist (p. 7).
+  - The share with no openings, by year: 65% (2021), 60% (2022), 56% (2023), 53% (2024), 46% (2025) (Figure 8).
+  - 22% agreed they had not been able to meet the demand for treatment from their patients (Figure 8).
+  - Method: online survey, probability-based sample from APA membership and state licensing boards. 1,742 completed of 26,502 received, a 6.6% completion rate. Licensed doctoral psychologists who treat patients (p. 10).
+- Why: counselor time is scarce, so the capacity view leads (`decisions.md`, 2026-11-07).
+- Limits: doctoral psychologists, not the master's-level counselors many FirstHarbor clients will see. A low completion rate. It measures openings for new patients, not time for reviewing clients between sessions.
+- Checked: read directly, from a copy downloaded from apa.org, 2026-11-07.
+
+**American Psychological Association. (2024). *Topline data tables for 2024 Practitioner Pulse Survey report*.** https://www.apa.org/pubs/reports/practitioner/2024/topline-data-2024-practitioner-survey.pdf
+
+- Pulled:
+  - Q20 "Which of the following best describes your current caseload?": 53% (453 of 851) "I do not have any openings for new patients right now."
+  - Q21 waitlist: 39% (327 of 849).
+  - Q23A time to a new patient's first appointment: under 1 month 56%, 1–3 months 27%, 4–6 months 9%, 7–12 months 4%, more than 12 months 4% (n = 825).
+- Why: the exact question wording and counts behind the 2024 figure.
+- Checked: read directly, from a copy downloaded from apa.org, 2026-11-07.
+
+**American Psychological Association. (2023, December 5). *Mental health crisis highlights access challenges* [Press release].** https://www.apa.org/news/press/releases/2023/12/mental-health-access-challenges
+
+- Pulled: 56% of psychologists had no openings for new patients in 2023. 561 licensed psychologists responded, from a random sample of 16,557 (August 30 to September 29, 2023).
+- Why: the 2023 point, with its sample.
+- Checked: read directly, from a saved copy, 2026-11-07.
+
 ## Not sourced yet
 
 - The CPI factor that converts 2013 dollars to 2024 dollars (about 1.34, from memory). Look up BLS CPI-U before using it.
 - The counselor review time for one week of close monitoring. Ask counselors.
+- The share of new clients FirstHarbor's counselors can watch closely in week 1. The capacity view uses 5% to 50% as illustrations, with 20% as the example. Ask counselors.
