@@ -114,8 +114,41 @@ r is the cost of a missed at-risk client in units of one unneeded week of close 
 - Why: the 2023 point, with its sample.
 - Checked: read directly, from a saved copy, 2026-11-07.
 
+## The K6 distress score
+
+**Substance Abuse and Mental Health Services Administration. (2024). *2022 National Survey on Drug Use and Health public use file codebook*.** In `data/codebooks/NSDUH-2022-DS0001-info-codebook_v2.pdf`.
+
+- Pulled:
+  - `KSSLR6MON` is the K6 total score for the past month, 0 to 24: six items, each coded 0 ("none of the time") to 4 ("all of the time"), summed.
+  - `SPDPSTMON`, past-month serious psychological distress, is defined as `KSSLR6MON` ≥ 13.
+  - `AD_MDEA1`–`AD_MDEA8` are depression symptoms 1 to 8, from questions about when the problems were worst.
+- Why: K6 is the rule that fills the slots (`decisions.md`, 2026-11-10). At 20% capacity its cutoff falls at 12 to 13, next to the survey's own cutoff for serious distress.
+- Checked: read directly from the codebook, 2026-11-10.
+
+**Kessler, R. C., Barker, P. R., Colpe, L. J., Epstein, J. F., Gfroerer, J. C., Hiripi, E., Howes, M. J., Normand, S.-L. T., Manderscheid, R. W., Walters, E. E., & Zaslavsky, A. M. (2003). Screening for serious mental illness in the general population. *Archives of General Psychiatry, 60*(2), 184–189.** https://jamanetwork.com/journals/jamapsychiatry/fullarticle/207204
+
+- Pulled:
+  - Scoring: item responses coded 0 to 4 and summed, for a 0 to 24 range.
+  - The cutoff: "The optimal cut-point on the K6 to equalize false-positive and false-negative results in the weighted sample was 0 to 12 vs 13 or more."
+  - At that cutoff, for serious mental illness: sensitivity 0.36 (SE 0.08), specificity 0.96 (SE 0.02), total classification accuracy 0.92. Area under the ROC curve 0.865 for K6 and 0.854 for K10.
+  - Sample: a two-stage convenience sample. 1,000 adults screened by telephone in the Boston area, then 155 interviewed at home by clinical psychologists with the SCID.
+  - Serious mental illness: a DSM-IV diagnosis other than a substance use disorder, with a GAF score below 60.
+  - In this study the K6 asked about "the one month in the past 12 months when you were at your worst emotionally". The original wording is "during the past 30 days".
+- Why: the source of the 13-or-more cutoff that the K6 rule lands next to at 20% capacity.
+- Limits: the paper calls its own results "only preliminary", because of "a relatively small local convenience sample". It validates K6 against serious mental illness, and does not mention suicide. So it supports K6 as a distress measure, not as a predictor of thoughts of suicide. That part rests on this project's own held-out scores.
+- Checked: full text open on jamanetwork.com, read through an automated fetch on 2026-11-10 (Claude). The quotes are as the fetch returned them. Open the page and confirm them before the defense.
+
+**Kessler, R. C., Andrews, G., Colpe, L. J., Hiripi, E., Mroczek, D. K., Normand, S.-L. T., Walters, E. E., & Zaslavsky, A. M. (2002). Short screening scales to monitor population prevalences and trends in non-specific psychological distress. *Psychological Medicine, 32*(6), 959–976.** https://doi.org/10.1017/S0033291702006074
+
+- Pulled: the paper that introduced the K10 and the K6, built for the U.S. National Health Interview Survey and checked against SCID clinical interviews (1,000 telephone screens, then 153 face-to-face interviews).
+- Why: the origin of the scale.
+- Checked: citation and abstract only, from search results that cite the PubMed record (PMID 12214795), 2026-11-10. The full text is behind Cambridge's paywall and was not read. Try the GMU library.
+
 ## Not sourced yet
 
+- The full text of Kessler et al. (2002), and the exact wording of the six K6 items from the authors. The item wording here comes from the NSDUH codebook.
+- Suicide attempts or deaths by age. The screen predicts thoughts, and gives older at-risk clients the fewest slots (`decisions.md`, 2026-11-10).
+- How counselors choose whom to watch closely now. The baseline here is a random pick.
 - The CPI factor that converts 2013 dollars to 2024 dollars (about 1.34, from memory). Look up BLS CPI-U before using it.
 - The counselor review time for one week of close monitoring. Ask counselors.
 - The share of new clients FirstHarbor's counselors can watch closely in week 1. The capacity view uses 5% to 50% as illustrations, with 20% as the example. Ask counselors.

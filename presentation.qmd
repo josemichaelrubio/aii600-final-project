@@ -13,32 +13,34 @@ format:
 
 ## Action
 
-**Build intake screening, and give the close-monitoring slots to the new clients with the highest predicted risk.**
+**Build intake screening: ask every new client the six K6 distress questions, and give the close-monitoring slots to the highest scores.**
 
 Counselor time is the constraint: 46% of psychologists have no openings for new patients, and 40% have a waitlist (APA, 2025).
 
-Five intake answers drive the ranking: age, distress (K6), substance use disorder, psychiatric medication, and phone or video treatment.
+I also tested a model with four more intake answers. It did not clearly beat K6 alone, so the screen is K6.
 
-Next step: ask counselors what share of new clients they can watch closely in week 1.
+Next step: ask counselors what share of new clients they can watch closely in week 1, and how they choose now.
 
 ## Reason
 
-![](fig/capacity.png){width="55%" fig-align="center"}
+![](fig/capacity.png){width="52%" fig-align="center"}
 
-If counselors can watch **1 in 5** new clients, the screen gives a slot to **59% of at-risk clients** (95% interval 54–62%), against 20% at random. That is **7.5 at-risk clients per 100 new clients, against 2.5**. Held-out 2023; the 2024 check gives 57%.
+If counselors can watch **1 in 5** new clients, sorting by K6 gives a slot to **56% of at-risk clients** (95% interval 52.7–59.5%), against 20% at random: **7.1 at-risk clients per 100 new clients, against 2.5**. Held-out 2023; 2024 gives 55%.
+
+The five-answer model reaches 59%. The gain, 2.7 points, has an interval of −0.9 to 3.9.
 
 ## Risk
 
-At 20% capacity, **41% of at-risk clients still start on standard monitoring: about 5 in every 100 new clients.**
+At 20% capacity, **44% of at-risk clients still start on standard monitoring: 5.6 in every 100 new clients.**
 
-The screen ranks risk. It does not create counselor time.
+At-risk clients aged 65 and over are the least likely to get a slot: 40% in 2023 and 22% in 2024, against 66% and 62% at ages 18–25. The screen predicts thoughts of suicide, not attempts or deaths.
 
-If time were unlimited, screening would beat watching everyone only when a missed at-risk client costs 30 weeks of monitoring or less.
+If counselors could watch everyone, a screen clearly pays only while a missed at-risk client costs up to 29 weeks of monitoring. From 50, the data cannot tell.
 
 ## Value
 
-A perfect screen would give every at-risk client a slot once 13% of clients can be watched. This one reaches 59% at 20%.
+A perfect screen would give every at-risk client a slot once 13% of clients can be watched. K6 reaches 56% at 20%.
 
-**Better predictors are worth up to 5 more at-risk clients on close monitoring per 100 new clients.** More capacity is worth 1.6 per 100 for each extra 10% watched (20% to 30%).
+**Better predictors are worth up to 5.6 more at-risk clients on close monitoring per 100 new clients.** More capacity is worth 1.8 per 100 for each extra 10% watched (20% to 30%).
 
-More of the same survey data is worth little. Better answers are worth more, such as a client's first-week conversations in FirstHarbor.
+Four more survey answers added 2.7 points in 2023 and 1.6 in 2024, which the data cannot tell from zero. Better answers are worth more, such as a client's first-week conversations in FirstHarbor.
