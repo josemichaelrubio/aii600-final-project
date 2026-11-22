@@ -1,7 +1,7 @@
 ---
 title: "Who should FirstHarbor's counselors watch most closely?"
 subtitle: "Who gets the close-monitoring slots when counselor time is scarce · K6 distress and serious thoughts of suicide · NSDUH 2022–2024"
-author: "Jose Michael Rubio · AII 600 · 9 December 2026"
+author: "Jose Michael Rubio · AII 600 · 2 December 2026"
 format:
   revealjs:
     embed-resources: true

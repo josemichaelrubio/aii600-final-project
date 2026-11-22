@@ -125,7 +125,7 @@ This file is the history of the project. Append an entry when a choice changes t
 
 - Decision. Keep capacity at 5% to 50%, with 20% as the example, and keep r from published costs. Nothing in the analysis changes.
 - Why. The 2026-10-26 and 2026-11-07 entries planned to replace my capacity and r with counselors' answers. On 22 November one clinician answered written questions that included both. She gave no share of new clients she could watch closely, and she did not trade low-risk clients against an at-risk one. One answer is not evidence about counselors in general, and no revisit condition that names counselors' numbers was triggered.
-- Alternative. Hold the talk until more counselors answer. The talk is on 9 December, and at my central estimates of r the action does not depend on these numbers.
+- Alternative. Hold the talk until more counselors answer. The talk is on 2 December, and at my central estimates of r the action does not depend on these numbers.
 - Revisit. When counselors give a capacity share or a value of r. If r comes in below about 4, the 2026-11-10 corrections entry already says what changes.
 
 ## 2026-11-22: the CPI factor, now from BLS
