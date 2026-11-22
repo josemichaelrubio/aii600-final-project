@@ -86,6 +86,13 @@ r is the cost of a missed at-risk client in units of one unneeded week of close 
 - Why: the cost of a false alarm, the denominator of r.
 - Checked: secondary (search summary of the BLS page).
 
+**U.S. Bureau of Labor Statistics. Consumer Price Index for All Urban Consumers (CPI-U), all items, U.S. city average, not seasonally adjusted. Series CUUR0000SA0.** https://data.bls.gov/timeseries/CUUR0000SA0
+
+- Pulled: annual average 232.957 for 2013 and 313.689 for 2024, each the mean of the twelve monthly values.
+- Derived: 313.689 / 232.957 = 1.3466, the factor that turns Shepard's 2013 dollars into 2024 dollars.
+- Why: puts the cost of a miss in the same year as the counselor wage.
+- Checked: from the BLS public API (v2), 2026-11-22 (Claude). It replaces "about 1.34, from memory" (`decisions.md`, 2026-11-22).
+
 ## Counselor capacity
 
 **American Psychological Association. (2025). *AI in the therapist's office: 2025 Practitioner Pulse Survey*. December 2025.** https://www.apa.org/pubs/reports/practitioner/2025/full-report.pdf
@@ -149,6 +156,6 @@ r is the cost of a missed at-risk client in units of one unneeded week of close 
 - The full text of Kessler et al. (2002), and the exact wording of the six K6 items from the authors. The item wording here comes from the NSDUH codebook.
 - Suicide attempts or deaths by age. The screen predicts thoughts, and gives older at-risk clients the fewest slots (`decisions.md`, 2026-11-10).
 - How counselors choose whom to watch closely now. The baseline here is a random pick.
-- The CPI factor that converts 2013 dollars to 2024 dollars (about 1.34, from memory). Look up BLS CPI-U before using it.
 - The counselor review time for one week of close monitoring. Ask counselors.
-- The share of new clients FirstHarbor's counselors can watch closely in week 1. The capacity view uses 5% to 50% as illustrations, with 20% as the example. Ask counselors.
+- The share of new clients FirstHarbor's counselors can watch closely in week 1. The capacity view uses 5% to 50% as illustrations, with 20% as the example. One clinician was asked on 2026-11-22 and gave no share (`decisions.md`). Ask more counselors.
+- A legal read on whether a counselor's list sorted by K6 stays outside FDA device rules (`decisions.md`, 2026-11-22).

@@ -106,3 +106,31 @@ This file is the history of the project. Append an entry when a choice changes t
 - Why. (1) A slot pays when the client's risk p satisfies r · p > 1 − p. At 20% capacity the last client to get a slot scores 12, where a K6-only logistic regression fit on 2022 puts the risk at 19.6%, so r must exceed 4.1. My central estimates of r are 14 and up, but the weak end of the attempts-only estimate is 2 to 3 (2026-10-26). (2) The r grid had no point between 29 and 50. I added 35 and 40. The intervals exclude zero through r = 29 in both years, through r = 40 on 2023 only, and include zero from r = 50 in both. An interval that includes zero is no evidence either way. It is not evidence that the screen loses. (3) K6 has 25 values, so many clients are tied, and the old function kept or dropped tied clients by their order in the file.
 - Alternative. Leave the wording: the action does not change at my central estimates of r. But the log would state more than the evidence shows, and the 2 to 3 end of my own range would contradict it.
 - Revisit. If counselors give an r below about 4, the rule at 20% capacity is to fill slots only down to the K6 score where r · p > 1 − p.
+
+## 2026-11-22: the assumption trusted least is now the one the rule makes
+
+- Decision. The assumption the rule trusts least is that adults in treatment in NSDUH stand in for FirstHarbor's new clients. "K6 as a straight line on the log-odds scale" stays as the assumption trusted least for the five-answer model only.
+- Why. Since 2026-11-10 the rule sorts by K6 and fits nothing, so the straight-line assumption no longer touches the action, and the residual check found it holds within about two standard errors in every band. What the rule rests on is that the clients with serious thoughts of suicide are the ones with the highest K6 among FirstHarbor's clients, as they are among survey respondents. The one shift inside the data, the 2024 change in the definition of treatment, moved the share caught from 56.2% to 55.4%. A change in how openly clients answer is not in the data, because the outcome is self-reported in the same interview.
+- Alternative. Keep the straight line as the one assumption named. It is what the notebook said, but it describes the model the project rejected.
+- Revisit. If FirstHarbor's own clients show that K6 ranks them worse than it ranks survey respondents, or if clients ordered into treatment are a large share of its clients.
+
+## 2026-11-22: the action is a counselor's tool, not a product that screens
+
+- Decision. The action now reads: give counselors the K6 intake form and a list of new clients sorted by score, and the counselor decides who gets the slots. A client who reports active intent goes to emergency services at once and is not in the list. The analysis and every number are unchanged.
+- Why. FirstHarbor's product rules forbid describing the product as one that "screens for" a condition, because under FDA rules that claim can make the software a medical device. "Build intake screening", the action since 2026-11-07, makes that claim. A questionnaire the counselor gives and reads keeps the clinical decision with the counselor. Clients with active intent leave for emergency services, so the sort orders check-ins only for everyone else.
+- Alternative. Keep "build intake screening" and name the regulatory cost as a reason to wait. That is honest, but it recommends something the decision maker's own rules forbid.
+- Revisit. If a lawyer says a list sorted by a published score is still a device function, then give counselors the K6 score without the sorting, or wait for clearance. I have not had a legal read.
+
+## 2026-11-22: a clinician asked for capacity and r gave neither, so the ranges stand
+
+- Decision. Keep capacity at 5% to 50%, with 20% as the example, and keep r from published costs. Nothing in the analysis changes.
+- Why. The 2026-10-26 and 2026-11-07 entries planned to replace my capacity and r with counselors' answers. On 22 November one clinician answered written questions that included both. She gave no share of new clients she could watch closely, and she did not trade low-risk clients against an at-risk one. One answer is not evidence about counselors in general, and no revisit condition that names counselors' numbers was triggered.
+- Alternative. Hold the talk until more counselors answer. The talk is on 9 December, and at my central estimates of r the action does not depend on these numbers.
+- Revisit. When counselors give a capacity share or a value of r. If r comes in below about 4, the 2026-11-10 corrections entry already says what changes.
+
+## 2026-11-22: the CPI factor, now from BLS
+
+- Decision. Use 1.3466 to turn 2013 dollars into 2024 dollars. This replaces "about 1.34", which was from memory (2026-10-26). No rounded number in the analysis changes.
+- Why. BLS CPI-U, all items, U.S. city average, not seasonally adjusted (series CUUR0000SA0), from the BLS API: the annual averages are 232.957 for 2013 and 313.689 for 2024, the mean of the twelve monthly values in each year. Their ratio is 1.3466. A nonfatal attempt is about $17,900 in 2024 dollars, and an event with deaths counted about $185,000. r counting attempts only is 14.4 to 28.8 (it was 14.3 to 28.6), and counting deaths 149 to 298 (it was 148 to 296).
+- Alternative. Keep 1.34 and mark it unsourced. The difference is small, but an unsourced number in the cost of a miss is easy to challenge.
+- Revisit. If the costs are moved to a later year.

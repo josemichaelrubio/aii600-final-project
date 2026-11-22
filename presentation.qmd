@@ -1,6 +1,6 @@
 ---
 title: "Who should FirstHarbor's counselors watch most closely?"
-subtitle: "Screening new clients for suicide risk when counselor time is scarce · NSDUH 2022–2024"
+subtitle: "Who gets the close-monitoring slots when counselor time is scarce · K6 distress and serious thoughts of suicide · NSDUH 2022–2024"
 author: "Jose Michael Rubio · AII 600 · 9 December 2026"
 format:
   revealjs:
@@ -13,13 +13,15 @@ format:
 
 ## Action
 
-**Build intake screening: ask every new client the six K6 distress questions, and give the close-monitoring slots to the highest scores.**
+**Give counselors the six K6 distress questions at intake and a list of new clients sorted by score. The close-monitoring slots go to the highest scores.**
+
+The counselor decides. A client with active intent goes to emergency services first, not into the list.
 
 Counselor time is the constraint: 46% of psychologists have no openings for new patients, and 40% have a waitlist (APA, 2025).
 
-I also tested a model with four more intake answers. It did not clearly beat K6 alone, so the screen is K6.
+A model with four more intake answers did not clearly beat K6 alone, so the list is sorted by K6.
 
-Next step: ask counselors what share of new clients they can watch closely in week 1, and how they choose now.
+Next step: each practice's own capacity, and a legal read on whether a sorted list stays outside FDA device rules.
 
 ## Reason
 
@@ -34,6 +36,8 @@ The five-answer model reaches 59%. The gain, 2.7 points, has an interval of −0
 At 20% capacity, **44% of at-risk clients still start on standard monitoring: 5.6 in every 100 new clients.**
 
 At-risk clients aged 65 and over are the least likely to get a slot: 40% in 2023 and 22% in 2024, against 66% and 62% at ages 18–25. The screen predicts thoughts of suicide, not attempts or deaths.
+
+It is one score at intake. It cannot see a client getting worse, and a client who under-reports scores low.
 
 If counselors could watch everyone, a screen clearly pays only while a missed at-risk client costs up to 29 weeks of monitoring. From 50, the data cannot tell.
 

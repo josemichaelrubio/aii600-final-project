@@ -58,7 +58,7 @@ Leave the data files out of git. A file you are allowed to republish goes on the
 
 R or Python. Use the language you can explain. AI assistants are allowed. On your fork, add one line to this README: what you used, and for what. You are responsible for everything on `main`, including the parts you did not write.
 
-AI use: Claude (Claude Code) found and checked the data sources and NSDUH variables, wrote and ran the code in `analysis.ipynb`, and drafted `PROPOSAL.md`, the `decisions.md` entries, the notebook's text, and the slides from my choices. On 10 November Claude also reviewed the project, found that sorting by K6 alone nearly matches the model, and recommended the K6 rule, which I accepted. I reviewed and am responsible for all of it.
+AI use: Claude (Claude Code) found and checked the data sources and NSDUH variables, wrote and ran the code in `analysis.ipynb`, and drafted `PROPOSAL.md`, the `decisions.md` entries, the notebook's text, and the slides from my choices. On 10 November Claude also reviewed the project, found that sorting by K6 alone nearly matches the model, and recommended the K6 rule, which I accepted. On 22 November Claude sourced the CPI factor from BLS, reworded the action as a counselor's tool, moved the assumption trusted least to the one the rule makes, added limits to the notebook and slides, and drafted the four 2026-11-22 `decisions.md` entries. I reviewed and am responsible for all of it.
 
 ## Files
 
